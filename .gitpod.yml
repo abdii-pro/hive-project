@@ -1,0 +1,9 @@
+image:
+  file: Dockerfile
+
+tasks:
+  - name: Set up environment
+    init: |
+      echo "Welcome to your Hive environment!"
+    command: |
+      echo "Type 'hive' below to start the Hive shell."
