@@ -28,3 +28,7 @@ RUN wget https://archive.apache.org/dist/hive/hive-${HIVE_VERSION}/apache-hive-$
 
 ENV HIVE_HOME=/opt/apache-hive-${HIVE_VERSION}-bin
 ENV PATH=$PATH:$HIVE_HOME/bin
+
+# Add Hadoop and Hive config dirs
+ENV HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+ENV HIVE_CONF_DIR=$HIVE_HOME/conf
