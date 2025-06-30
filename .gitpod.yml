@@ -1,9 +1,9 @@
-image:
-  file: Dockerfile
+# .gitpod.yml
+image: bigdataeurope/hive:2.3.2-postgresql-metastore
 
 tasks:
-  - name: Set up environment
+  - name: Start Hive shell
     init: |
-      echo "Welcome to your Hive environment!"
+      echo "Welcome to your Hive workspace!"
     command: |
       echo "Type 'hive' below to start the Hive shell."
