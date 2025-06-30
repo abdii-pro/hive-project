@@ -2,9 +2,9 @@ FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install dependencies
+# Install dependencies including derby (needed for Hive embedded metastore)
 RUN apt-get update && \
-    apt-get install -y openjdk-8-jdk wget tar ssh nano git && \
+    apt-get install -y openjdk-8-jdk wget tar ssh nano git derby && \
     apt-get clean
 
 # Set Java environment variables
