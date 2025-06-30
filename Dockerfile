@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y openjdk-8-jdk wget tar ssh nano && \
+    apt-get install -y openjdk-8-jdk wget tar ssh nano git && \
     apt-get clean
 
 # Set Java environment variables
